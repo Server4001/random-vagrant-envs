@@ -4,8 +4,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-    config.vm.box = "server4001/php7-centos"
-    config.vm.box_version = "0.3.0"
+    config.vm.box = "bento/centos-6.7"
+    config.vm.box_version = "2.2.7"
 
     config.vm.define "first" do |first|
         first.vm.network :private_network, ip: "192.168.35.54"
