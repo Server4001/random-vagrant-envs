@@ -21,3 +21,8 @@ if [ ! -f "${vault_binary}" ]; then
   echo "MOVING HASHICORP VAULT..."
   mv ./vault "${vault_binary}"
 fi
+
+# Bash configs.
+cp /vagrant/config/bash/first.root.bashrc /root/.bashrc
+cp /vagrant/config/bash/first.vagrant.bashrc /home/vagrant/.bashrc
+chown vagrant:vagrant /home/vagrant/.bashrc

@@ -8,3 +8,8 @@ if [ "$(grep -c third.gluster.loc /etc/hosts)" -lt 1 ]; then
 fi
 
 . /vagrant/provision/common.sh
+
+# Bash configs.
+cp /vagrant/config/bash/second.root.bashrc /root/.bashrc
+cp /vagrant/config/bash/second.vagrant.bashrc /home/vagrant/.bashrc
+chown vagrant:vagrant /home/vagrant/.bashrc

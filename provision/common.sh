@@ -20,3 +20,6 @@ fi
 if [ ! -f /usr/bin/nc ]; then
   yum install -y socat telnet nc
 fi
+if [ ! -f /usr/sbin/lsof ]; then
+  yum install -y lsof
+fi
