@@ -17,3 +17,6 @@ fi
 if [ ! -f /usr/bin/unzip ]; then
   yum install -y unzip
 fi
+if [ ! -f /usr/bin/nc ]; then
+  yum install -y socat telnet nc
+fi
